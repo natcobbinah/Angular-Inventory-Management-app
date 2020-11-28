@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <h3>{{product.getName}}</h3>
+        <h4>{{product.getSku}}</h4>
+        <div class="col-md-3">
+            <app-product-image [product]="product">
+            </app-product-image>
+        </div>
+        <div class="col-md-6">
+            <app-product-department [product]="product">
+            </app-product-department>
+        </div>
+        <div class="col-md-3">
+            <app-price-display [price]="product.getPrice">
+            </app-price-display>
+        </div>
+    </div>
+</div>
+
+
+
